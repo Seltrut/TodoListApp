@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#AA00DD"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:id="@+id/taskLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvTask"
+        android:layout_height="40dp"
+        android:layout_width="312dp"
+        android:text="Task"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvTask"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tvComp"
+
+        />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/tvComp"
+        android:layout_height="90dp"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/taskLayout"
+
+        android:layout_alignParentRight="true"
+
+    />
+</RelativeLayout>
